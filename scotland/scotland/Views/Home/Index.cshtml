@@ -1,0 +1,350 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div id="page" class="site">
+    <header class="site-header">
+        <div class="inner-wide">
+        <div  style="height:50px;width:50px; float:left; "onclick="window.location = '/Home/Index'">
+            <img src="~/assets/images/ns copy.png" />
+        </div>
+            <h1 class="site-title"><a href="index.html">  </a></h1>
+        
+            <nav class="site-navigation" aria-label="Main Menu">
+                <h2 class="screen-reader-text">Explore Website </h2>
+                <ul class="menu">
+                    <li class="menu-item home current-menu-item" role="presentation"><a href="/Home/Index">Anasayfa</a></li>
+                    <li class="menu-item about" role="presentation"><a href="about/index.html">Hakkında </a></li>
+                    <li class="menu-item style-guide" role="presentation"><a href="style-guide/index.html">Stil Rehberi </a></li>
+                    <li class="menu-item buy-curious-theme" role="presentation"><a href="http://themeforest.net/item/curious-blog-and-magazine-ghost-theme/13139486?ref=justgoodthemes">Tema Satın Alın </a></li>
+                </ul><!-- .menu -->
+            </nav><!-- .site-navigation -->
+
+            <a class="search-toggle" href="#"><span class="screen-reader-text">Search </span><span class="icon-search" aria-hidden="true"></span></a>
+            <a class="sidebar-toggle" href="#"><span class="screen-reader-text">Open Sidebar </span><span class="icon-nav-custom" aria-hidden="true"></span></a>
+        </div><!-- .inner-wide -->
+    </header><!-- .site-header -->
+
+    <main class="site-main">
+        <div class="site-content inner-wide">
+
+            <div class="cover hero">
+                <div class="cover-bg" style="background-image: url('/assets/istanbul/istanbul.jpg'); "></div>
+                <div class="cover-content" onclick="window.location = '/Home/Istanbul'">
+                    <div class="inner">
+                        <div class="hero-wrap">
+                            <h2 class="hero-title">İstanbul</h2>
+                            <p class="hero-text">Neden Gidelim? </p>
+                            @*<p class="subscribe"><a href="/Home/Subscribe" class="button light">Subscribe </a></p>*@
+                        </div>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+            </div><!-- .cover -->
+
+            <div class="post-grid">
+                <article class="grid-item post tag-photography">
+                    <div class="post-inside" onclick="window.location = '/Home/Nevsehir'">
+                        <div class="post-bg" style="background-image: url('/assets/images/kapadokya.JPG'); "></div>
+                        <header class="post-header">
+                            <div class="post-tags">
+                                @*<a href="tag/photography/index.html">Fotoğraflar </a>*@
+                            </div>
+                            <h2 class="post-title"><a href="what-to-know-before-moving-to-new-york/index.html" rel="bookmark">Nevşehir </a></h2>
+                            <p class="hero-text">Neden Gidelim? </p>
+                            <div class="post-meta">
+                                  @*<span class="post-author"><a href="author/eric-watson/index.html">Kapadokya </a>,  <a href="author/nancy-perez/index.html">Peribacaları </a></span> on  <time class="published" datetime="2018-04-20">April 20, 2018 </time>*@
+                            </div><!-- .post-meta -->
+                        </header><!-- .post-header -->
+                        <div class="read-more">
+                            @*<a class="button light" href="what-to-know-before-moving-to-new-york/index.html" title="What To Know Before Moving To New York">Git </a>*@
+                        </div>
+                    </div>
+                </article><!-- .post -->
+                <article class="grid-item post tag-music">
+                    <div class="post-inside" onclick="window.location = '/Home/Trabzon'">
+                        <div class="post-bg" style="background-image: url('../../assets/images/uzungol.jpg'); "></div>
+                        <header class="post-header">
+                            <div class="post-tags">
+                                @*<a href="tag/music/index.html">Müzik </a>*@
+                            </div>
+                            <h2 class="post-title"><a href="six-things-that-will-make-or-break-fusion-festival/index.html" rel="bookmark">Trabzon </a></h2>
+                            <p class="hero-text">Neden Gidelim? </p>
+                            <div class="post-meta">
+                                @*by  <span class="post-author"><a href="author/nancy-perez/index.html">Nancy Perez </a></span> on  <time class="published" datetime="2018-04-17">April 17, 2018 </time>*@
+                            </div><!-- .post-meta -->
+                        </header><!-- .post-header -->
+                        <div class="read-more">
+                           
+                        </div>
+                    </div>
+                </article><!-- .post -->
+                <article class="grid-item post tag-travel">
+                    <div class="post-inside" onclick="window.location = '/Home/Izmır'">
+                        <div class="post-bg" style=" background-image: url('../../assets/images/efes kenti-izmir.jpg'); "></div>
+                        <header class="post-header">
+                            <div class="post-tags">
+                                @*<a href="tag/travel/index.html">Seyehat </a>*@
+                            </div>
+                            <h2 class="post-title"><a href="basic-rules-for-walking-in-the-mountains/index.html" rel="bookmark">İzmir </a></h2>
+                            <p class="hero-text">Neden Gidelim? </p>
+                            <div class="post-meta">
+                                @*by  <span class="post-author"><a href="author/eric-watson/index.html">Eric Watson </a></span> on  <time class="published" datetime="2017-09-24">September 24, 2017 </time>*@
+                            </div><!-- .post-meta -->
+                        </header><!-- .post-header -->
+                        <div class="read-more">
+                            @*<a class="button light" href="basic-rules-for-walking-in-the-mountains/index.html" title="Basic Rules For Walking In The Mountains">Read More </a>*@
+                        </div>
+                    </div>
+                </article><!-- .post -->
+                <article class="grid-item post tag-travel">
+                    <div class="post-inside" onclick="window.location = '/Home/Balıkesir'" >
+                        <div class="post-bg" style="background-image: url('../../assets/images/kazdağları-balıkesir.jpg'); "></div>
+                        <header class="post-header">
+                            <div class="post-tags">
+                                @*<a href="tag/travel/index.html">Seyehat </a>*@
+                            </div>
+                            <h2 class="post-title"><a href="basic-rules-for-walking-in-the-mountains/index.html" rel="bookmark">Balıkesir </a></h2>
+                            <p class="hero-text">Neden Gidelim? </p>
+                            <div class="post-meta">
+                                @*by  <span class="post-author"><a href="author/eric-watson/index.html">Eric Watson </a></span> on  <time class="published" datetime="2017-09-24">September 24, 2017 </time>*@
+                            </div><!-- .post-meta -->
+                        </header><!-- .post-header -->
+                        <div class="read-more">
+                            @*<a class="button light" href="basic-rules-for-walking-in-the-mountains/index.html" title="Basic Rules For Walking In The Mountains">Read More </a>*@
+                        </div>
+                    </div>
+                </article><!-- .post -->
+                <article class="grid-item post tag-getting-started">
+                    <div class="post-inside" onclick="window.location = '/Home/Mardin'">
+                        <div class="post-bg" style="background-image: url('../../assets/images/mardin-.jpg'); "></div>
+                        <header class="post-header">
+                            <div class="post-tags">
+                                @*<a href="tag/getting-started/index.html">Getting Started </a>*@
+                            </div>
+                            <h2 class="post-title"><a href="using-tags/index.html" rel="bookmark">Mardin</a></h2>
+                            <div class="post-meta">
+                                @*by  <span class="post-author"><a href="author/eric-watson/index.html">Eric Watson </a></span> on  <time class="published" datetime="2017-09-24">September 24, 2017 </time>*@
+                            </div><!-- .post-meta -->
+                        </header><!-- .post-header -->
+                        <div class="read-more">
+                            @*<a class="button light" href="using-tags/index.html" title="Organising your content with tags">Daha fazla oku </a>*@
+                        </div>
+                    </div>
+                </article><!-- .post -->
+                <article class="grid-item post tag-photography">
+                    <div class="post-inside" onclick="window.location = '/Home/Antalya'">
+                        <div class="post-bg" style="background-image: url('../../assets/images/koprulukanyon.jpg'); "></div>
+                        <header class="post-header">
+                            <div class="post-tags">
+                                @*<a href="tag/photography/index.html">Fotoğraflar </a>*@
+                            </div>
+                            <h2 class="post-title"><a href="what-is-photography-and-what-it-means-to-me/index.html" rel="bookmark">Antalya </a></h2>
+                        <p>Neden Gidelim?</p>
+                            <div class="post-meta">
+                                @*by  <span class="post-author"><a href="author/nancy-perez/index.html">Nancy Perez </a></span> on  <time class="published" datetime="2017-09-23">September 23, 2017 </time>*@
+                            </div><!-- .post-meta -->
+                        </header><!-- .post-header -->
+                        <div class="read-more">
+                            @*<a class="button light" href="what-is-photography-and-what-it-means-to-me/index.html" title="What Is Photography and What It Means To Me">Read More </a>*@
+                        </div>
+                    </div>
+                </article><!-- .post -->
+             <article class="grid-item post tag-travel">
+                    <div class="post-inside" onclick="window.location = '/Home/Canakkale'" >
+                        <div class="post-bg" style="background-image: url('../../assets/images/Canakkale.jpg'); "></div>
+                        <header class="post-header">
+                            <div class="post-tags">
+                                @*<a href="tag/travel/index.html">Seyehat </a>*@
+                            </div>
+                            <h2 class="post-title"><a href="basic-rules-for-walking-in-the-mountains/index.html" rel="bookmark">Çanakkale </a></h2>
+                            <p class="hero-text">Neden Gidelim? </p>
+                            <div class="post-meta">
+                                @*by  <span class="post-author"><a href="author/eric-watson/index.html">Eric Watson </a></span> on  <time class="published" datetime="2017-09-24">September 24, 2017 </time>*@
+                            </div><!-- .post-meta -->
+                        </header><!-- .post-header -->
+                        <div class="read-more">
+                            @*<a class="button light" href="basic-rules-for-walking-in-the-mountains/index.html" title="Basic Rules For Walking In The Mountains">Read More </a>*@
+                        </div>
+                    </div>
+                </article><!-- .post -->
+                <article class="grid-item post tag-travel">
+                    <div class="post-inside" onclick="window.location = '/Home/Ankara'">
+                        <div class="post-bg" style="background-image: url('../../assets/images/ankara-anıtkabir.jpg'); "></div>
+                        <header class="post-header">
+                            <div class="post-tags">
+                                @*<a href="tag/travel/index.html">Seyehat </a>*@
+                            </div>
+                            <h2 class="post-title"><a href="basic-rules-for-walking-in-the-mountains/index.html" rel="bookmark">Ankara </a></h2>
+                            <p class="hero-text">Neden Gidelim? </p>
+                            <div class="post-meta">
+                                @*by  <span class="post-author"><a href="author/eric-watson/index.html">Eric Watson </a></span> on  <time class="published" datetime="2017-09-24">September 24, 2017 </time>*@
+                            </div><!-- .post-meta -->
+                        </header><!-- .post-header -->
+                        <div class="read-more">
+                            @*<a class="button light" href="basic-rules-for-walking-in-the-mountains/index.html" title="Basic Rules For Walking In The Mountains">Read More </a>*@
+                        </div>
+                    </div>
+                </article><!-- .post -->
+            </div><!-- .post-grid -->
+
+            <nav class="pagination">
+                <span class="page-number">Page 1 of 3 </span>
+                <a class="older-posts square dark" href="page/2/index.html"><span class="screen-reader-text">Older Posts </span><span class="icon-right-custom" aria-hidden="true"></span></a>
+            </nav>
+
+
+        </div><!-- .site-content -->
+    </main><!-- .site-main -->
+
+    <aside class="sidebar" aria-label="Sidebar">
+        <div class="sidebar-scrollable">
+            <div class="widget-area">
+                <nav class="site-navigation" aria-label="Main Menu">
+                    <h2 class="screen-reader-text"> Web Sitesini Keşfedin </h2>
+                    <ul class="menu">
+                        <li class="menu-item home current-menu-item" role="presentation"><a href="index.html">AnaSayfa </a></li>
+                        <li class="menu-item about" role="presentation"><a href="about/index.html">Hakkında </a></li>
+                        <li class="menu-item style-guide" role="presentation"><a href="style-guide/index.html">Stil Rehberi </a></li>
+                        <li class="menu-item ghost-hosting" role="presentation"><a href="https://ghost.org/pricing/?lmref=495">Ghost hosting </a></li>
+                        <li class="menu-item buy-curious-theme" role="presentation"><a href="http://themeforest.net/item/curious-blog-and-magazine-ghost-theme/13139486?ref=justgoodthemes">Tema Satın Alın </a></li>
+                    </ul><!-- .menu -->
+                </nav><!-- .site-navigation -->
+
+                <section class="widget widget-text">
+                    <h2 class="widget-title">About Curious </h2>
+                    <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit. Donec ___ lacus id tortor iaculis _______ dignissim eget justo. Maecenas _______ eros nisl, ut pharetra ______ faucibus a. In imperdiet ____ mattis lacus mollis, sit ____ pulvinar purus vehicula. </p>
+                </section><!-- .widget -->
+                <section class="widget widget-newsletter">
+                    <h2 class="widget-title">Curious Newsletter </h2>
+                    <p>Enter your email address __ subscribe to this blog ___ receive notifications of new _____ by email. </p>
+                    <form method="post" action="/subscribe/" id="" class="gh-subscribe-form">
+                        <input class="confirm" type="hidden" name="confirm" /><input class="location" type="hidden" name="location" /><input class="referrer" type="hidden" name="referrer" />
+
+                        <div class="form-group">
+                            <input class="subscribe-email" type="email" name="email" placeholder="Your email address" />
+                        </div>
+                        <button id="" class="" type="submit"><span>Subscribe </span></button>
+
+                        <script>
+                            (function (g, h, o, s, t) {
+                                var buster = function (b, m) {
+                                    h[o]('input.' + b).forEach(function (i) {
+                                        i.value = i.value || m;
+                                    });
+                                };
+                                buster('location', g.location.href);
+                                buster('referrer', h.referrer);
+                            })(window, document, 'querySelectorAll', 'value');
+                        </script>
+
+                    </form>
+
+
+                </section><!-- .widget -->
+                <section class="widget widget-text">
+                    <h2 class="widget-title">Contact </h2>
+                    <p>Lorem ipsum dolor sit ____, consectetur adipiscing elit. Donec ___ lacus id tortor iaculis _______ dignissim eget justo. Maecenas _______ eros nisl, ut pharetra ______ faucibus a. In imperdiet ____ mattis lacus mollis, sit ____ pulvinar purus vehicula. </p>
+                    <ul class="contacts">
+                        <li><span class="icon icon-envelope" aria-hidden="true"></span> blogin [at] gmail.com </li>
+                        <li><span class="icon icon-map-marker" aria-hidden="true"></span> 123 Some Street, ____ City, AA 12345 </li>
+                        <li><span class="icon icon-phone" aria-hidden="true"></span> +123 112 23445 </li>
+                    </ul>
+                </section><!-- .widget -->
+            </div><!-- .widget-area -->
+            <a class="sidebar-toggle" href="#"><span class="screen-reader-text">Close Sidebar </span><span aria-hidden="true" class="icon-close-custom"></span></a>
+        </div><!-- .sidebar-scrollable -->
+    </aside><!-- .sidebar -->
+    <aside class="footer-widgets">
+        <div class="inner-wide">
+            <div class="widget-area">
+                <div class="footer-col first">
+                    <section class="widget widget-recent-posts">
+                        <h2 class="widget-title">Latest Posts </h2>
+                        <ul>
+                            <li>
+                                <a href="what-to-know-before-moving-to-new-york/index.html" class="recent-thumb" style="background-image: url(content/images/2017/09/New-York-2.jpg);"><span class="screen-reader-text">What To Know Before ______ To New York </span></a>
+                                <div class="recent-title"><a href="what-to-know-before-moving-to-new-york/index.html">What To Know Before ______ To New York </a></div>
+                                <div class="recent-date">April 20, 2018 </div>
+                            </li>
+                            <li>
+                                <a href="six-things-that-will-make-or-break-fusion-festival/index.html" class="recent-thumb" style="background-image: url(content/images/2017/09/Festival.jpg);"><span class="screen-reader-text">Seven Things That Will ____ Or Break Fusion Festival </span></a>
+                                <div class="recent-title"><a href="six-things-that-will-make-or-break-fusion-festival/index.html">Seven Things That Will ____ Or Break Fusion Festival </a></div>
+                                <div class="recent-date">April 17, 2018 </div>
+                            </li>
+                            <li>
+                                <a href="visiting-london-for-the-first-time/index.html" class="recent-thumb" style="background-image: url(content/images/2017/09/London.jpg);"><span class="screen-reader-text">Visiting London for the _____ Time </span></a>
+                                <div class="recent-title"><a href="visiting-london-for-the-first-time/index.html">Visiting London for the _____ Time </a></div>
+                                <div class="recent-date">April 12, 2018 </div>
+                            </li>
+                        </ul>
+                    </section><!-- .widget -->
+                </div>
+                <div class="footer-col middle">
+                    <section class="widget widget-tags">
+                        <h2 class="widget-title">Tags </h2>
+                        <div class="tagcloud">
+                            <a href="tag/adventure/index.html">Adventure </a><a href="tag/design/index.html">Design </a><a href="tag/getting-started/index.html">Getting Started </a><a href="tag/minimal/index.html">Minimal </a><a href="tag/music/index.html">Music </a><a href="tag/photography/index.html">Photography </a><a href="tag/science/index.html">Science </a><a href="tag/tips/index.html">Tips </a><a href="tag/travel/index.html">Travel </a>
+                        </div>
+                    </section><!-- .widget -->
+                </div>
+                <div class="footer-col last">
+                    <section class="widget widget-instagram">
+                        @*<h2 class="widget-title">Curious on @instagram </h2>*@
+                        <div id="instafeed" class="instagram-feed"></div>
+                    </section><!-- .widget -->
+                </div>
+            </div><!-- .widget-area -->
+        </div><!-- .inner-wide -->
+    </aside><!-- .footer-widgets -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="inner-wide">
+                <div class="offsite-links">
+                    <a href="../mobile.twitter.com/justgoodthemes.html" target="_blank"><span class="icon-twitter" aria-hidden="true"></span><span class="screen-reader-text">Twitter </span></a>
+                    <a href="https://www.facebook.com/justgoodthemes" target="_blank"><span class="icon-facebook" aria-hidden="true"></span><span class="screen-reader-text">Facebook </span></a>
+                    <a href="https://plus.google.com/" target="_blank"><span class="icon-google" aria-hidden="true"></span><span class="screen-reader-text">Google+ </span></a>
+                    <a href="https://www.linkedin.com/in/" target="_blank"><span class="icon-linkedin" aria-hidden="true"></span><span class="screen-reader-text">Linkedin </span></a>
+                    <a href="https://github.com/" target="_blank"><span class="icon-github" aria-hidden="true"></span><span class="screen-reader-text">GitHub </span></a>
+                    <a href="https://codepen.io/" target="_blank"><span class="icon-codepen" aria-hidden="true"></span><span class="screen-reader-text">CodePen </span></a>
+                    <a href="https://dribbble.com/" target="_blank"><span class="icon-dribbble" aria-hidden="true"></span><span class="screen-reader-text">Dribbble </span></a>
+                    <a href="https://www.behance.net/" target="_blank"><span class="icon-behance" aria-hidden="true"></span><span class="screen-reader-text">Behance </span></a>
+                    <a href="https://medium.com/" target="_blank"><span class="icon-medium" aria-hidden="true"></span><span class="screen-reader-text">Medium </span></a>
+                    <a href="https://www.instagram.com/" target="_blank"><span class="icon-instagram" aria-hidden="true"></span><span class="screen-reader-text">Instagram </span></a>
+                    <a href="https://www.pinterest.com/" target="_blank"><span class="icon-pinterest" aria-hidden="true"></span><span class="screen-reader-text">Pinterest </span></a>
+                    <a href="https://www.vimeo.com/" target="_blank"><span class="icon-vimeo" aria-hidden="true"></span><span class="screen-reader-text">Vimeo </span></a>
+                    <a href="https://www.youtube.com/user/" target="_blank"><span class="icon-youtube" aria-hidden="true"></span><span class="screen-reader-text">YouTube </span></a>
+                    <a href="rss/index.html" target="_blank"><span class="icon-feed" aria-hidden="true"></span><span class="screen-reader-text">RSS </span></a>
+                </div><!-- .offsite-links -->
+                <a href="#page" class="top-link square"><span class="icon-up-custom" aria-hidden="true"></span><span class="screen-reader-text">Back to the top </span></a>
+            </div><!-- .inner -->
+        </div><!-- .footer-top -->
+        <div class="site-info inner-wide">
+            <p><a href="index.html">Curious </a> &copy; 2019  <br />Curious theme by  <a target="_blank" href="https://justgoodthemes.com/">JustGoodThemes </a></p>
+        </div><!-- .site-info -->
+    </footer><!-- .site-footer -->
+    <section class="site-search" role="search">
+        <div class="search-scrollable">
+            <div class="search-box">
+                <div class="search-box-inside">
+                    <h2 class="screen-reader-text">Search Curious </h2>
+                    <form class="search-form">
+                        <label class="screen-reader-text">Search for: </label>
+                        <input type="text" id="search-field" class="search-field" placeholder="Type your keywords&hellip;" />
+                        <input type="submit" class="search-submit" value="Search" />
+                    </form>
+                    <div id="search-results" class="search-results"></div>
+                </div><!-- .search-box-inside -->
+            </div><!-- .search-box -->
+            <a class="search-toggle" href="#"><span class="screen-reader-text">Close </span><span aria-hidden="true" class="icon-close-custom"></span></a>
+        </div><!-- .search-scrollable -->
+    </section><!-- .site-search -->
+    <div class="overlay"></div>
+</div><!-- #page -->
+
+<script type="text/javascript" src="../code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery-3.2.1.min_2ef39560.js"><\/script>');</script>
+
+
+<script type="text/javascript" src="assets/js/plugins_2ef39560.js"></script>
+<script type="text/javascript" src="assets/js/custom_2ef39560.js"></script>

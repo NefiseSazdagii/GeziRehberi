@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{105E2DA7-7A8F-494C-B7E7-84230A7A9616}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>scotland</RootNamespace>
+    <AssemblyName>scotland</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Caching, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\LSS\Umut Kaymak\Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets2\css\style.css" />
+    <Content Include="assets2\images\5-skin-01.jpg" />
+    <Content Include="assets2\images\5-skin-02.jpg" />
+    <Content Include="assets2\images\5-skin-03.jpg" />
+    <Content Include="assets2\images\5-skin-04.jpg" />
+    <Content Include="assets2\images\5-skin-05.jpg" />
+    <Content Include="assets2\images\5-skin-06.jpg" />
+    <Content Include="assets2\images\5-skin-07.jpg" />
+    <Content Include="assets2\images\5-skin-08.jpg" />
+    <Content Include="assets2\images\5-skin-maintenance.jpg" />
+    <Content Include="assets2\images\amp-bg.jpg" />
+    <Content Include="assets2\images\amp-logo.png" />
+    <Content Include="assets2\images\amp-phone.png" />
+    <Content Include="assets2\images\ampimg1.png" />
+    <Content Include="assets2\images\ampimg2.png" />
+    <Content Include="assets2\images\ampimg3.png" />
+    <Content Include="assets2\images\ampimg4.png" />
+    <Content Include="assets2\images\favicon.ico" />
+    <Content Include="assets2\images\feature-blog.jpg" />
+    <Content Include="assets2\images\feature-compare.jpg" />
+    <Content Include="assets2\images\feature-customizer.jpg" />
+    <Content Include="assets2\images\feature-instagram.jpg" />
+    <Content Include="assets2\images\feature-lookbook.jpg" />
+    <Content Include="assets2\images\feature-menu.jpg" />
+    <Content Include="assets2\images\feature-reviews.jpg" />
+    <Content Include="assets2\images\feature-revolution.jpg" />
+    <Content Include="assets2\images\feature-sizeguide.jpg" />
+    <Content Include="assets2\images\feature-wishlist.jpg" />
+    <Content Include="assets2\images\features-bg-bottom.jpg" />
+    <Content Include="assets2\images\features-bg.jpg" />
+    <Content Include="assets2\images\item-shadow.png" />
+    <Content Include="assets2\images\logo_light.png" />
+    <Content Include="assets2\images\main-section_bg.jpg" />
+    <Content Include="assets2\images\main_bg.jpg" />
+    <Content Include="assets2\images\page-blog.jpg" />
+    <Content Include="assets2\images\page-category.jpg" />
+    <Content Include="assets2\images\page-contact.jpg" />
+    <Content Include="assets2\images\page-lookbook.jpg" />
+    <Content Include="assets2\images\page-maintenance.jpg" />
+    <Content Include="assets2\images\page-product.jpg" />
+    <Content Include="assets2\images\pagebuilder-bg.jpg" />
+    <Content Include="assets2\images\pages-bg.jpg" />
+    <Content Include="assets2\images\pb-01.png" />
+    <Content Include="assets2\images\pb-02.png" />
+    <Content Include="assets2\images\pb-03.png" />
+    <Content Include="assets2\images\pixel.gif" />
+    <Content Include="assets2\images\qr-code.gif" />
+    <Content Include="assets2\images\showcase-01.jpg" />
+    <Content Include="assets2\images\showcase-02.jpg" />
+    <Content Include="assets2\images\showcase-03.jpg" />
+    <Content Include="assets2\images\showcase-04.jpg" />
+    <Content Include="assets2\images\showcase-05.jpg" />
+    <Content Include="assets2\images\showcase-06.jpg" />
+    <Content Include="assets2\images\showcase-07.jpg" />
+    <Content Include="assets2\images\showcase-08.jpg" />
+    <Content Include="assets2\images\showcase-bg.jpg" />
+    <Content Include="assets2\images\skin-01.jpg" />
+    <Content Include="assets2\images\skin-02.jpg" />
+    <Content Include="assets2\images\skin-03.jpg" />
+    <Content Include="assets2\images\skin-04.jpg" />
+    <Content Include="assets2\images\skin-05.jpg" />
+    <Content Include="assets2\images\skin-06.jpg" />
+    <Content Include="assets2\images\skin-07.jpg" />
+    <Content Include="assets2\images\skin-08.jpg" />
+    <Content Include="assets2\js\jquery.js" />
+    <Content Include="assets\Antalya\Altınbebesik-magarasi.jpg" />
+    <Content Include="assets\Antalya\dim-cayi-kahvalti-02.jpg" />
+    <Content Include="assets\Antalya\Konyaaltiplaji.jpg" />
+    <Content Include="assets\Antalya\koprulukanyon.jpg" />
+    <Content Include="assets\Antalya\kursunlu-selalesi.jpg" />
+    <Content Include="assets\Antalya\Manavgatselalesi.jpg" />
+    <Content Include="assets\Antalya\oyuncak-muzesi.jpg" />
+    <Content Include="assets\Antalya\saklikent-kayak-merkezi.jpg" />
+    <Content Include="assets\Antalya\yanartasantalya.jpg" />
+    <Content Include="assets\Balıkesir\Antandros-Antik-Kenti.jpg" />
+    <Content Include="assets\Balıkesir\Camlibel.jpg" />
+    <Content Include="assets\Balıkesir\cunda-adasi.jpg" />
+    <Content Include="assets\Balıkesir\Yazören-Mağarası.jpg" />
+    <Content Include="assets\images\koprulukanyon.jpg" />
+    <Content Include="assets\css\ghost.min_2ef39560.css" />
+    <Content Include="assets\images\ankara-anıtkabir.jpg" />
+    <Content Include="assets\images\Canakkale.jpg" />
+    <Content Include="assets\images\efes kenti-izmir.jpg" />
+    <Content Include="assets\images\gideros-Kastamonu.jpg" />
+    <Content Include="assets\images\istanbul.jpg" />
+    <Content Include="assets\images\kapadokya.JPG" />
+    <Content Include="assets\images\kazdağları-balıkesir.jpg" />
+    <Content Include="assets\images\mardin-.jpg" />
+    <Content Include="assets\images\ns copy.png" />
+    <Content Include="assets\images\ns icon.jpg" />
+    <Content Include="assets\images\olympos antik kent-Antalya.jpg" />
+    <Content Include="assets\images\uzungol.jpg" />
+    <Content Include="assets\images\ölü deniz- mugla.jpg" />
+    <Content Include="assets\istanbul\anadolu-hisari.jpg" />
+    <Content Include="assets\istanbul\Anadolukavagi.jpg" />
+    <Content Include="assets\istanbul\belgrad-ormani.jpg" />
+    <Content Include="assets\istanbul\beylerbeyisarayi.jpg" />
+    <Content Include="assets\istanbul\Botanik.jpg" />
+    <Content Include="assets\istanbul\camlica-tepesi.jpg" />
+    <Content Include="assets\istanbul\camlica.jpg" />
+    <Content Include="assets\istanbul\dolmabahce.jpg" />
+    <Content Include="assets\istanbul\emirgan.jpg" />
+    <Content Include="assets\istanbul\galatakoprusu.jpg" />
+    <Content Include="assets\istanbul\hidivkasri.jpg" />
+    <Content Include="assets\istanbul\istanbul.jpg" />
+    <Content Include="assets\istanbul\istiklal.jpg" />
+    <Content Include="assets\istanbul\kapalicarsi.jpg" />
+    <Content Include="assets\istanbul\kizkulesi.jpg" />
+    <Content Include="assets\istanbul\miniaturk.jpg" />
+    <Content Include="assets\istanbul\otagtepe.jpg" />
+    <Content Include="assets\istanbul\pierre-loti-2.jpg" />
+    <Content Include="assets\istanbul\rumelihisari.jpg" />
+    <Content Include="assets\istanbul\safirkule.jpg" />
+    <Content Include="assets\istanbul\sultanahmet.jpg" />
+    <Content Include="assets\istanbul\topkapi-sarayi.jpg" />
+    <Content Include="assets\istanbul\yerebatansarnici.jpg" />
+    <Content Include="assets\js\ghost-sdk.min_2ef39560.js" />
+    <Content Include="assets\css\style_2ef39560.css" />
+    <Content Include="assets\fonts\fontawesome_4b513236.svg" />
+    <Content Include="assets\images\ajax-loader.gif" />
+    <Content Include="assets\images\close%402x.png" />
+    <Content Include="assets\images\close.png" />
+    <Content Include="assets\js\custom_2ef39560.js" />
+    <Content Include="assets\js\jquery-3.2.1.min_2ef39560.js" />
+    <Content Include="assets\js\myScripts.js" />
+    <Content Include="assets\js\plugins_2ef39560.js" />
+    <Content Include="assets\js\Yonlendirmeler.js" />
+    <Content Include="assets\Nevsehir\damat.jpg" />
+    <Content Include="assets\Nevsehir\gorememzesi.jpg" />
+    <Content Include="assets\Nevsehir\ihlaravadisi.jpg" />
+    <Content Include="assets\Nevsehir\kapadokya.jpg" />
+    <Content Include="assets\Nevsehir\peribacalari.jpg" />
+    <Content Include="assets\Nevsehir\uchisar.jpg" />
+    <Content Include="assets\Nevsehir\urgup.jpg" />
+    <Content Include="assets\Nevsehir\yeraltisehri.jpg" />
+    <Content Include="assets\Nevsehir\Zelvei.jpg" />
+    <Content Include="assets\Trabzon\altindere.jpg" />
+    <Content Include="assets\Trabzon\atatürkköskü.jpg" />
+    <Content Include="assets\Trabzon\calmagarasi.jpg" />
+    <Content Include="assets\Trabzon\düzkoy.jpg" />
+    <Content Include="assets\Trabzon\peristeramanastiri.jpg" />
+    <Content Include="assets\Trabzon\sumelamanastiri.jpg" />
+    <Content Include="assets\Trabzon\uzungol-rize.jpg" />
+    <Content Include="assets\Trabzon\uzungol.jpg" />
+    <Content Include="assets\Trabzon\Vazelonmanastiri.jpg" />
+    <Content Include="assets\Trabzon\zagnosvadisi.jpg" />
+    <Content Include="assets\İzmir\alacati.jpg" />
+    <Content Include="assets\İzmir\bayindir.jpg" />
+    <Content Include="assets\İzmir\bergama.jpg" />
+    <Content Include="assets\İzmir\dikili.jpg" />
+    <Content Include="assets\İzmir\efes kenti-izmir.jpg" />
+    <Content Include="assets\İzmir\efes.jpg" />
+    <Content Include="assets\İzmir\karaburun.jpg" />
+    <Content Include="assets\İzmir\seferhisar.jpg" />
+    <Content Include="assets\İzmir\sirince.jpg" />
+    <Content Include="assets\İzmir\tire.jpg" />
+    <Content Include="Caching.dll" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\2017\09\About.jpg" />
+    <Content Include="Content\images\2017\09\burning-man.jpg" />
+    <Content Include="Content\images\2017\09\bw-people.jpg" />
+    <Content Include="Content\images\2017\09\carbon_pearls_1.jpg" />
+    <Content Include="Content\images\2017\09\Curious-Hero.jpg" />
+    <Content Include="Content\images\2017\09\deer-hero.jpg" />
+    <Content Include="Content\images\2017\09\design.jpg" />
+    <Content Include="Content\images\2017\09\droplet_01-1.jpg" />
+    <Content Include="Content\images\2017\09\Exposure_3.jpg" />
+    <Content Include="Content\images\2017\09\Exposure_5.jpg" />
+    <Content Include="Content\images\2017\09\Festival.jpg" />
+    <Content Include="Content\images\2017\09\Festival_2.jpg" />
+    <Content Include="Content\images\2017\09\hiking-left.jpg" />
+    <Content Include="Content\images\2017\09\hiking.jpg" />
+    <Content Include="Content\images\2017\09\ice-1.jpg" />
+    <Content Include="Content\images\2017\09\ice.jpg" />
+    <Content Include="Content\images\2017\09\interior.jpg" />
+    <Content Include="Content\images\2017\09\Japan.jpg" />
+    <Content Include="Content\images\2017\09\kids.jpg" />
+    <Content Include="Content\images\2017\09\landscape_2.jpg" />
+    <Content Include="Content\images\2017\09\London-1-1.jpg" />
+    <Content Include="Content\images\2017\09\London.jpg" />
+    <Content Include="Content\images\2017\09\Medium.jpg" />
+    <Content Include="Content\images\2017\09\Medium_right.jpg" />
+    <Content Include="Content\images\2017\09\Mount-Everest.jpg" />
+    <Content Include="Content\images\2017\09\museum.jpg" />
+    <Content Include="Content\images\2017\09\music-tag.jpg" />
+    <Content Include="Content\images\2017\09\New-York-2-1.jpg" />
+    <Content Include="Content\images\2017\09\New-York-2.jpg" />
+    <Content Include="Content\images\2017\09\New-York-3.jpg" />
+    <Content Include="Content\images\2017\09\photo-bw.jpg" />
+    <Content Include="Content\images\2017\09\seed_05-1.jpg" />
+    <Content Include="Content\images\2017\09\Serenity9.jpg" />
+    <Content Include="Content\images\2017\09\started.jpg" />
+    <Content Include="Content\images\2017\09\style-guide-1.jpg" />
+    <Content Include="Content\images\2017\09\style-guide-2.jpg" />
+    <Content Include="Content\images\2017\09\tag-bc.jpg" />
+    <Content Include="Content\images\2017\09\walking-1.jpg" />
+    <Content Include="Content\images\2017\09\walking.jpg" />
+    <Content Include="Content\images\2017\09\welcome-to-Ghost.jpg" />
+    <Content Include="Content\images\2018\09\keith-wong-736441-unsplash.jpg" />
+    <Content Include="Content\images\2018\10\kai-pilger-317256-unsplash.jpg" />
+    <Content Include="Content\images\2018\10\nik-shuliahin-460611-unsplash.jpg" />
+    <Content Include="Content\images\2018\10\patrick-tomasso-621527-unsplash.jpg" />
+    <Content Include="Content\images\2018\10\stig-ottesen-358882-unsplash.jpg" />
+    <Content Include="Content\images\2018\12\jane.jpg" />
+    <Content Include="Content\images\2018\12\john.jpg" />
+    <Content Include="Content\images\2018\12\jonh-bc.jpg" />
+    <Content Include="Content\images\2018\12\nature-bw.jpg" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="assets\fonts\fontawesome_4b513236.ttf" />
+    <Content Include="assets\fonts\fontawesome_4b513236.woff" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\index.d.ts" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Views\Home\ns icon.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Istanbul.cshtml" />
+    <Content Include="Views\Shared\_LayoutSehirler.cshtml" />
+    <Content Include="Views\Home\Nevsehir.cshtml" />
+    <Content Include="Views\Home\Trabzon.cshtml" />
+    <Content Include="Views\Home\Antalya.cshtml" />
+    <Content Include="Views\Home\Balıkesir.cshtml" />
+    <Content Include="Views\Home\Mardin.cshtml" />
+    <Content Include="Views\Home\Izmır.cshtml" />
+    <Content Include="Views\Home\Canakkale.cshtml" />
+    <Content Include="Views\Home\Ankara.cshtml" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50367</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50367/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
